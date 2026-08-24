@@ -23,5 +23,6 @@ def fetch_generation_data(country_code: str, start: str, end: str, api_key: str)
         logger.error("Timeout durante la richiesta per %s", country_code)
         raise
     except requests.exceptions.HTTPError as e:
-        logger.error("Errore HTTP %s per %s", e.response.status_code, country_code)
+        status = e.response.status_code if e.response is not None else "sconosciuto"
+        logger.error("Errore HTTP %s per %s", status, country_code)
         raise
