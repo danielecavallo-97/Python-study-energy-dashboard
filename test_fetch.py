@@ -7,7 +7,7 @@ from energy_dashboard.storage_raw import save_raw
 
 country_code = "10YIT-GRTN-----B"  # Italia
 start = "202601010000" 
-end = "202601020000"
+end = "202601100000"
 
 if API_KEY is None:
      raise RuntimeError("ENTSOE_API_KEY non trovata: controlla il file .env")
