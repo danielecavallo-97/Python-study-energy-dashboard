@@ -1,3 +1,6 @@
 {
-  "python.analysis.extraPaths": ["src/energy_dashboard"]
+  "python.analysis.extraPaths": [
+    "src/energy_dashboard"
+  ],
+  "python.terminal.useEnvFile": true
 }
