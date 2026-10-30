@@ -3,3 +3,4 @@ src\energy_dashboard\__pycache__
 .venv
 *.egg-info/
 src\energy_dashboard.egg-info
+others
